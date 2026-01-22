@@ -1,3 +1,3 @@
-name = "Snoopy" 
+name =input("what is your name: ")
 
 print(name)
