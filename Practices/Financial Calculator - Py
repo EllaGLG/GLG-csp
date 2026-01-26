@@ -1,0 +1,19 @@
+#GLG financial calculator
+
+montly_income = 3000
+
+montly_rent = 1200
+
+montly_utilities = 200 
+
+montly_grogeries = 250
+
+montly_transportacion = 500 
+
+income_rent = ("montly_income - montly_rent")
+
+percente = float(input("montly_rent: %"))/100
+
+total = float(total("montly_income-montly_rent"))
+
+"print(total)"
