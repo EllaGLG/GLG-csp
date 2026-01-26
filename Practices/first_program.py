@@ -1,5 +1,4 @@
 GLG First Program 
+name = input("what is your name? ")
 
-name = "Noah"
-
-print(name)
+print("cool name buddy", name)
