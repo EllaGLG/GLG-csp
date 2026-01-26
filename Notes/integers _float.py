@@ -6,7 +6,7 @@ total = round(price +(price + tax), 2)
 
 print(total)"""
 
-apples = 35
+apples = int(input("how manyapples are there:"))
 
 friends = 8
 
