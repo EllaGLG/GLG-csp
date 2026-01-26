@@ -16,4 +16,4 @@ percente = float(input("montly_rent: %"))/100
 
 total = float(total("montly_income-montly_rent"))
 
-"print(total)"
+"print(total)" 

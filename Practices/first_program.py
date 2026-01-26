@@ -1,4 +1,4 @@
 #GLG First Program 
-input("whats the best tyoe of pants?")
+name = input("what is your name?")
 
-print ("whats the best tyoe of pants?")
+print("cool name budy")
