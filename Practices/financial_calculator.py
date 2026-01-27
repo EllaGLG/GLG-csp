@@ -30,4 +30,5 @@ savings = income * 0.10
 print("You should save $", savings, "a month, that is 10% of your income.")
 
 leftover = income - (rent + utilities + groceries + transportation + savings)
+
 print("You have $", leftover, "of spending money each month!")
