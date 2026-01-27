@@ -27,6 +27,7 @@ print("Your groceries are $", groceries, "and that is", groceries_percent, "% of
 print("Your transportation is $", transportation, "and that is", transportation_percent, "% of your income.")
 
 savings = income * 0.10
+
 print("You should save $", savings, "a month, that is 10% of your income.")
 
 leftover = income - (rent + utilities + groceries + transportation + savings)
