@@ -1,5 +1,5 @@
 #GLG striping.py
-#name = input("what your name:").strinp().title()
+#name = input("what your name:").strip().title()
 
 #print("hello", name + "!")
 
