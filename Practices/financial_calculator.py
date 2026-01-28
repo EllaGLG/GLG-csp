@@ -2,27 +2,34 @@
 
 montly_income = float(input("Enter your monthly income: "))
 
-rent = float(input("Enter your monthly rent: "))
+Rent = float(input("Enter your monthly rent: "))
 
-utilities = float(input("Enter your monthly utilities cost: "))
+Utilities = float(input("Enter your monthly utilities cost: "))
 
-groceries = float(input("Enter your monthly groceries cost: "))
+Groceries = float(input("Enter your monthly groceries cost: "))
 
 transportation = float(input("Enter your monthly transportation cost: "))
 
-rent_percent = (rent / montly_income) * 100
+rent_percent = (Rent / montly_income) * 100
 
-utilities_percent = (utilities / montly_income) * 100
+utilities_percent = (Utilities / montly_income) * 100
 
-groceries_percent = (groceries / montly_income) * 100
+groceries_percent = (Groceries / montly_income) * 100
 
-transportation_percent = (transportation / income) * 100
+transportation_percent = (transportation / montly_income) * 100
 
-print("Your rent is $", rent, "and that is", rent_percent, "% of your income.")
+print("Your rent is $", Rent, "and that is", rent_percent, "% of your income.")
 
-print("Your utilities are $", utilities, "and that is", utilities_percent, "  % of your income.")
+print("Your utilities are $", Utilities, "and that is", utilities_percent, "  % of your income.")
 
-print("Your groceries are $", groceries, "and that is", groceries_percent, " % of your income.")
+print("Your groceries are $", Groceries, "and that is", groceries_percent, " % of your income.")
 
 print("Your transportation is $", transportation, "and that is", transportation_percent, "% of your income.")
 
+savings = montly_income * 0.10
+
+print("You should save $", savings, "a month, that is 10% of your income.")
+
+leftover = montly_income - (Rent + Utilities + Groceries + transportation+ savings)
+
+print("You have $", leftover, "of spending money each month!")

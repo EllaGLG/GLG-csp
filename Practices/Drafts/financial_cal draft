@@ -1,20 +1,20 @@
 #GLG financial calculator
 
-Montly_income = float(input("Enter your monthly income: "))
+montly_income = float(input("Enter your monthly income: "))
 
-Rent = float(input("Enter your monthly rent: "))
+rent = float(input("Enter your monthly rent: "))
 
-Utilities = float(input("Enter your monthly utilities cost: "))
+utilities = float(input("Enter your monthly utilities cost: "))
 
-Groceries = float(input("Enter your monthly groceries cost: "))
+groceries = float(input("Enter your monthly groceries cost: "))
 
-Transportation = float(input("Enter your monthly transportation cost: "))
+transportation = float(input("Enter your monthly transportation cost: "))
 
-rent_percent = (Rent / Montly_income) * 100
+rent_percent = (rent / montly_income) * 100
 
-utilities_percent = (Utilities / Montly_income) * 100
+utilities_percent = (utilities / montly_income) * 100
 
-groceries_percent = (Groceries / Montly_income) * 100
+groceries_percent = (groceries / montly_income) * 100
 
 transportation_percent = (transportation / income) * 100
 
