@@ -1,10 +1,10 @@
-#GLG silly_sentences.py
+#GLG p7 silly_sentences.py
 
 place = input("Enter a place: ")
 
 verb = input("Enter a verb: ")
 
-feeling = input("Enter a felling: ")
+feeling = input("Enter a feeling: ")
 
 verb2 = input("Enter a verb: ")
 
