@@ -1,4 +1,4 @@
-#GLG financial calculator
+#GLG financial calculator period 8
 
 montly_income = float(input("Enter your monthly income: "))
 
