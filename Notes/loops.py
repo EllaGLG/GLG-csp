@@ -24,9 +24,8 @@ while True:
         break #exit the loop
     elif guess > 25 or guess < 1:
         print("that isn't an option.")
-        elif guess < number
-
-for name in names :
+    elif guess < number:
+for name in name:
     print(f"Hello{name}")
 
 for number in numbers :
