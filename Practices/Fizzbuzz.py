@@ -8,16 +8,4 @@ for i in range (1,51):
         print("Buzz")
     else:
         print(i)
-
-
-
-
-
-
-'''start = 1
-while start <= 50 :
-    print(start)
-    start += 1
-    if i % 15
-
-'''
+        
