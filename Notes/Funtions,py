@@ -9,9 +9,12 @@ def full_name(first, last):
 
 
 hello()
-print(full_name("vienna", "LaRose"))
-name = full_name("tia", "LaRose")
-print(f'{name}dosen't like{full_name9('Annabeth', 'chase')})
+print(f'Hello{full_name("vienna", "LaRose")}')
+persone_one = full_name("tia", "LaRose")
+print(f'The second persone is {persone_one}')
+persone = full_name("Katie", "LaRose")
+helo(persone)
+
 '''
 '''#ex 2
 hello()
@@ -40,3 +43,5 @@ for num in range(1,10):
         print(f"{name} is the admin for the lab!")
 
 admin()
+
+'''print(f'{name}dosen't like{full_name9('Annabeth', 'chase')})'''

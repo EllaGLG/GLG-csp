@@ -1,18 +1,16 @@
 #GLG financial calculator period 7
-def hey(funtion):
-    print float(input("Enter your monthly {input}: "))
 
-def funtion (loat(input(funtion(montly_income, rent, utilities, groceries, transportacion, ))):
-    print(f"{montly_income}  {rent} {utilities} {groceries} {transportacion}")
+montly_income = float(input("Enter your monthly income: "))
 
-print("Enter your monthly {funtion}:")
+Rent = float(input("Enter your monthly rent: "))
 
+Utilities = float(input("Enter your monthly utilities cost: "))
 
+Groceries = float(input("Enter your monthly groceries cost: "))
 
+transportation = float(input("Enter your monthly transportation cost: "))
 
-
-
-'''rent_percent = (Rent / montly_income) * 100
+rent_percent = (Rent / montly_income) * 100
 
 utilities_percent = (Utilities / montly_income) * 100
 
@@ -35,5 +33,3 @@ print("You should save $", savings, "a month, that is 10% of your income.")
 leftover = montly_income - (Rent + Utilities + Groceries + transportation+ savings)
 
 print("You have $", leftover, "of spending money each month!")
-
-'''
