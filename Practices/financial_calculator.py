@@ -1,4 +1,4 @@
-#GlG period 7 finacial_cal update
+#GlG period 7 finacial_cal update.py
 
 def money(prompt):
     return round(float(input(prompt)), 2)
