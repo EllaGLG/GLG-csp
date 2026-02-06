@@ -1,4 +1,4 @@
-#GLG funtion.py period 7
+    #GLG funtion.py period 7
 '''#ex
 def hello():
     print("HelloWorld")
@@ -29,7 +29,7 @@ def factoral(number):
     return total
 
 for num in range(1,10):
-    print(f"the factoral of {num} is {factoral(num)}")
+    print(f"the factoral of {number} is {factoral(number)}")
 
     '''#ex 2
     for num in range(1,100):
