@@ -1,0 +1,13 @@
+#GLG period 7 variable_practise
+#include <stdio.h> // Lets us use inputs and outputs 
+
+int main(){
+    //variables examples
+    char name[] = "Lucy"
+    int year = 2010;
+    float gpa = 4.0;
+    char grade = 'A';  // single letter uses single quotes
+    char name[] = "Snoopy";
+    int number;
+    char user[50];
+}
