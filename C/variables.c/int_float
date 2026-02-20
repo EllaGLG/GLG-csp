@@ -1,0 +1,14 @@
+// GLG int_float
+
+#include  <stdio. h>
+
+int main(){
+    int people = 22;
+    int apples = 25;
+    int room = 200;
+
+    printf("people: %d\napples: 5d\nRoom: 5d\n", people, apples, room);
+
+
+    return 0;
+}

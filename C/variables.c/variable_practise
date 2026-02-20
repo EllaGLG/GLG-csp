@@ -1,4 +1,4 @@
-#GLG period 7 variable_practise
+// GLG period 7 variable_practise
 #include <stdio.h> // Lets us use inputs and outputs 
 
 int main(){
