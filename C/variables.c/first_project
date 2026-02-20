@@ -1,0 +1,4 @@
+#GLG period 7th first_procject
+
+ printf("tell me your name\n");
+    scanf("%s", &user);
