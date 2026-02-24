@@ -1,53 +1,43 @@
-// GLG, period 7th, finacial calculator 
-
 #include <stdio.h>
 
-int main(){
+int main() {
 
-def money(prompt);
-    return round(float(input(prompt)), 2);
+    float income, rent, utilities, groceries, transportation;
+    float savings_percent, savings, spending;
+    float rent_percent, utilities_percent, groceries_percent, transportation_percent, savings_percent_of_income;
 
+   
+    printf("What is your monthly income: $ ");
+    scanf("%f", &income);
 
-def get_percent(income, expense);
-    return round((expense / income) * 100);
+  
+    printf("What is your monthly rent/mortgage: $ ");
+    scanf("%f", &rent);
 
+    printf("What are your monthly utilities: $ ");
+    scanf("%f", &utilities);
 
-def print_categoryf(name, income, amount);
-    int = get_percent(income, amount );
-    printf("Your {name} is ${amount:.2f} and that is {percent}% of your income");
+    printf("What are your monthly groceries: $ ");
+    scanf("%f", &groceries);
 
-
-
-int income = money("What is your monthly income: $ ");
-
-int rent = money("What is your monthly rent/mortgage: $ ");
-
-int utilities = money("What are your monthly utilities: $ ");
-
-int groceries = money("What are your monthly groceries: $ ");
-
-int transportation = money("What is your monthly transportation: $ ");
-
-int savings_percent = money("What percentage of your income would you like to save? ");
-
-int savings = round(income * (savings_percent / 100), 2);
-
-int spending = round(
-    income - rent - utilities - groceries - transportation - savings, 2
-);
+    printf("What is your monthly transportation: $ ");
+    scanf("%f", &transportation);
 
 
-print_categoryf("rent", income, rent);
+    printf("What percentage of your income would you like to save? ");
+    scanf("%f", &savings_percent);
 
-print_categoryf("utilities", income, utilities);
+    savings = income * (savings_percent / 100);
 
-print_categoryf("groceries", income, groceries);
+    spending = income - rent - utilities - groceries - transportation - savings;
 
-print_categoryf("transportation", income, transportation);
+    rent_percent = (rent / income) * 100;
+    utilities_percent = (utilities / income) * 100;
+    groceries_percent = (groceries / income) * 100;
+    transportation_percent = (transportation / income) * 100;
+    savings_percent_of_income = (savings / income) * 100;
 
-print_categoryf("savings", income, savings);
 
-printf("You have ${spending:.2f} of spending money each month!");
+    printf("\n--- Monthly Financial Summary ---\n\n");
 
-    return 0;
-}
+    printf("Rent: $%.2f (%.0
