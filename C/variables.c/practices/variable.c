@@ -25,3 +25,10 @@ int main(){
      return 0; //required last line in your main funtion
 
 }
+
+char place = ("Enter a place: ");
+    char  verb = input("Enter a verb: ");
+    char feeling = input("Enter a feeling: ");
+    char verb2 = input("Enter a verb: ");
+    char mad_lib[1000];
+    
