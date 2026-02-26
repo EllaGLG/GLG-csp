@@ -10,7 +10,7 @@ int main(){
     char mad_lib[1000];
 
     printf("Enter a place:\n");
-    scanf("%s",&madlib);
+    scanf("%s",madlib);
 
     printf("Enter a verb:\n");
      scanf("%s", "mad_lib");
