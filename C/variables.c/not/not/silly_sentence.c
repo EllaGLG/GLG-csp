@@ -1,6 +1,7 @@
 // GLG 7th period silly sentence
 
 #include <stdio.h>
+#include <string.h>
 
 int main(){
     char place;
