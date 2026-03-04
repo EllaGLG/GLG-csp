@@ -15,7 +15,7 @@ int main(){
 
     
     printf("Enter a place:\n");
-    scanf("%s", madlib);
+    scanf("%s", mad_lib);
 
     printf("Enter a verb:\n");
      scanf("%s", replace1);
