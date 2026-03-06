@@ -1,10 +1,10 @@
-// GLG period 7 update_financial_calculator.c
+// GLG period 7 updatefinancial_calculator.c
 
 
 
 #include <stdio.h>
 
-float money(char prompt[]) {
+float money(char* prompt) {
     float value;
     printf("%s", prompt);
     scanf("%f", &value);
@@ -16,18 +16,14 @@ float get_percent(float income, float expense) {
     return (expense / income) * 100;
 }
 
-void print_category(char name[], float income, float amount) {
+void print_category(char* name, float income, float amount) {
     float percent = get_percent(income, amount);
     printf("Your %s is $%.2f and that is %.0f%% of your income.\n",
            name, amount, percent);
 }
 
 int main() {
-
-    
     float income = money("What is your monthly income: $ ");
-
-   
     float rent = money("What is your monthly rent/mortgage: $ ");
     float utilities = money("What are your monthly utilities: $ ");
     float groceries = money("What are your monthly groceries: $ ");
