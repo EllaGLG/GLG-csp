@@ -1,3 +1,4 @@
+// GLG period 7 
 #include <stdio.h>
 // Example 1
 int sqr(int num){
