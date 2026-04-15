@@ -5,31 +5,67 @@
     <head>
         <title>Advanced html notes</title>
         <meta charset="UTF-8">
+        <!--Embaded style sheet go inside of the head tag-->
+        <style>
+            *{
+                background-color: rgb(186, 100, 194);
+            }
+          img{
+            width: 50%;
+            border: 4px inset white;
+          }  
+
+          #unordered{
+            font-family: fantasy;
+          }
+          #ordered{
+            color: teal;
+            background-color: blanchedalmond;
+          }
+        .odd{
+            background-color: gray;
+            color: orange;
+        }
+        P{
+            background-color: red;
+            color: #55edd4;
+            background-color: rgba(148, 58, 233, 0.404);
+            text-align: right;
+        }
+        h1{
+            text-align: center;
+            font-size: 4em;
+            border: 3px solid white;
+        }
+        </style>
     </head>
 
     <body>
 
         <h1>HTML Advanced Notes</h1>
-        <p>This is how we make an(usualy numbered) orderd list</p>
+        <!--This has inline css. . . That is bad syntax-->
+        <p>This is how we make an (usualy numbered) orderd list</p>
         <div>
             <p>This is the div</p>
         </div>
         <ol>
-            <li>Computer Science Principals</li>
+            <li class="odd">Computer Science Principals</li>
             <li>Computer Programing</li>
-            <li>Advanced computer programing</li>
+            <li class="odd">Advanced computer programing</li>
         </ol>
-        <div id="unordered" style="font-family: papyrus;">
+        <div id="unordered">
         <p>this is how we make an unordered(bulleted) list</p>
         <ul>
-            <li>Apple</li>
+            <li class="odd">Apple</li>
             <li>Orange</li>
-            <li>Peach</li>
+            <li class="odd">Peach</li>
             <li>Bannana</li>
         </ul>
         </div>
-        <a href="https://docs.google.com/document/d/1JVvNAw2gITQ9VZdXF-35SnncZ7ZAdpA-DSV4MiD9k6Y/edit?tab=t.0" target="_blank"> this link to notes</a> <!--The href allows links. the target makes it go to new tab-->
-        <img src="https://img.freepik.com/free-photo/shallow-focus-vertical-shot-cute-golden-retriever-puppy-sitting-grass-ground_181624-27259.jpg?semt=ais_hybrid&w=740&q=80" alt="cute dog, miis la rose like">  
+        <a href="https://docs.google.com/document/d/1JVvNAw2gITQ9VZdXF-35SnncZ7ZAdpA-DSV4MiD9k6Y/edit?tab=t.0"
+         target="_blank"> this link to notes</a> <!--The href allows links. the target makes it go to new tab-->
+        <img src="https://img.freepik.com/free-photo/shallow-focus-vertical-shot-cute-golden-retriever-puppy-sitting-grass-ground_181624-27259.jpg?semt=ais_hybrid&w=740&q=80" 
+        alt="cute dog, miis la rose like">  
 
     </body>
 </html>
