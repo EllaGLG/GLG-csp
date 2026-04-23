@@ -10,70 +10,79 @@
 
     <style>
         body {
-            background-color: rgb(233, 190, 223);
+            background-color: rgb(233, 190, 223); /* TU COLOR ORIGINAL */
             font-family: "Montserrat", sans-serif;
             margin: 0;
             padding: 0;
         }
 
+        /* CONTENEDOR TIPO REVISTA */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        /* TÍTULO PRINCIPAL */
         h1 {
             text-align: center;
             font-family: "Butterfly Kids", cursive;
             font-size: 60px;
-            color: rgb(150, 37, 144);
+            color: rgb(150, 37, 144); /* TU COLOR ORIGINAL */
             margin-top: 20px;
         }
 
+        /* SUBTÍTULOS */
         h2, h3 {
             font-family: "Butterfly Kids", cursive;
             font-size: 40px;
-            color: white;
+            color: white; /* TU COLOR ORIGINAL */
             margin-bottom: 10px;
         }
 
+        /* PÁRRAFOS */
         p {
-            color: white;
+            color: white; /* TU COLOR ORIGINAL */
             padding: 10px;
             margin: 10px 0;
             line-height: 1.5;
         }
 
+        /* LISTAS */
         ul {
-            color: white;
+            color: white; /* TU COLOR ORIGINAL */
             padding-left: 20px;
         }
 
+        /* IMÁGENES */
         img {
-            border: 4px inset rgb(230, 133, 178);
+            border: 4px inset rgb(230, 133, 178); /* TU COLOR ORIGINAL */
             width: 250px;
         }
 
-        /* FLEXBOX MAIN CONTAINER */
-        .container {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            padding: 20px;
-        }
-
-        /* GRID SECTION */
+        /* SECCIÓN GRID TIPO REVISTA */
         .grid-section {
             display: grid;
             grid-template-columns: 250px 1fr;
             gap: 20px;
             align-items: start;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.15);
+            background-color: rgba(255, 255, 255, 0.15); /* TU ESTILO ORIGINAL */
             border-radius: 10px;
         }
 
+        /* IMAGEN CENTRADA */
         .center-img {
             display: flex;
             justify-content: center;
         }
 
+        /* LINK FINAL */
         a {
-            color: purple;
+            color: purple; /* TU COLOR ORIGINAL */
             font-weight: bold;
         }
     </style>
@@ -85,7 +94,7 @@
 
         <h1>Olivia Rodrigo</h1>
 
-        <!-- INTRO SECTION -->
+        <!-- INTRO -->
         <div>
             <h2>The Breakthrough</h2>
             <p>
@@ -98,13 +107,13 @@
             </p>
         </div>
 
-        <!-- IMAGE -->
+        <!-- IMAGEN PRINCIPAL -->
         <div class="center-img">
             <img src="https://imageio.forbes.com/specials-images/imageserve/69ceb1dc3b8973d4632b02c3/HE6ZwvgaIAAJ0sI/0x0.jpg?format=jpg&width=480"
                 alt="Olivia's New Album">
         </div>
 
-        <!-- GRID SECTION (IMAGE + TEXT SIDE BY SIDE) -->
+        <!-- SECCIÓN GRID -->
         <div class="grid-section">
             <img src="https://i.pinimg.com/originals/5f/37/35/5f373530ffafbbe48757b2ead82026b3.jpg"
                 alt="Olivia as a child">
@@ -120,7 +129,7 @@
             </div>
         </div>
 
-        <!-- LIST SECTION -->
+        <!-- LISTA -->
         <div>
             <p>Some of her first roles were:</p>
             <ul>
