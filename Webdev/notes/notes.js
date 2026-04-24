@@ -12,4 +12,4 @@ function click(){
     document.getElementById("btn").style.color = white
     document.getElementById("btn").style.backgroundColor = red
 }
-function
+function 14.04
