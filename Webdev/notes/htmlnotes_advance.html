@@ -1,36 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Advanced html notes</title>
-        <meta charset="UTF-8">
-        <!--Enbeded style sheets go inside the head tag-->
+        <!--CSS stands for Cascading Style Sheets-->
+        <title>Advanced Notes on HTML</title>
+        <meta charset="UTF-8"/>
+        <!--Embeded CSS goes inside of the head tags using the <style> tag-->
+            <style>
+                *{
+                    background-color: rgba(139, 242, 128, 0.762);
+                }
+                p{
+                    background-color: black;
+                    color: aqua;-
+                    background-color: teal;
+                    text-align: right;
+                    font-size: .5em; 
+                }
+                #ordered-lists{
+                    background-color: bisque;
+                    color:chocolate;
+                }
+                .odd{
+                    background-color: green;
+                    color:white;
+                }
+                h1{
+                    text-align: center;
+                    color: 	#a36e3f90;
+                    border: 2px solid yellow;
+                }
+                img{
+                    width: 50%;
+                } 
+            </style>
     </head>
-
     <body>
-
         <h1>HTML Advanced Notes</h1>
-        <p>This is how we make an(usualy numbered) orderd list</p>
-        <div>
-            <p>This is the div</p>
+        <!--Inline styles are done in the HTML opening tag. This is bad practice to use!-->
+        <div style="background-color: blueviolet; height: 100px; width:100px">
+            <p>Div content</p>
         </div>
+        <div id="ordered-lists">
+        <p>This is how you make an ordered (numbered) list</p>
         <ol>
-            <li>Computer Science Principals</li>
-            <li>Computer Programing</li>
-            <li>Advanced computer programing</li>
+            <li class="odd">Programming 2</li>
+            <li>Programming 2</li>
+            <li class="odd">Computer Science Principles</li>
+            <li>Lunch</li>
         </ol>
-        <div id="unordered" style="font-family: papyrus;">
-        <p>this is how we make an unordered(bulleted) list</p>
-        <ul>
-            <li>Apple</li>
+    </div>
+        <br>
+        <div id="unordered-lists">
+        <p>This is how you create an unordered (bulleted) list</p>
+        <ul style="list-style-type:circle">
+            <li class="odd">Apple</li>
             <li>Orange</li>
+            <li class="odd">Banana</li>
             <li>Peach</li>
-            <li>Bannana</li>
+            <li class="odd">Grape</li>
         </ul>
-        </div>
-        <a href="https://docs.google.com/document/d/1JVvNAw2gITQ9VZdXF-35SnncZ7ZAdpA-DSV4MiD9k6Y/edit?tab=t.0" target="_blank"> this link to notes</a> <!--The href allows links. the target makes it go to new tab-->
-        <img src="https://img.freepik.com/free-photo/shallow-focus-vertical-shot-cute-golden-retriever-puppy-sitting-grass-ground_181624-27259.jpg?semt=ais_hybrid&w=740&q=80" alt="cute dog, miis la rose like">  
-
+        <a href="https://www.w3schools.com/tags/tag_ul.asp" target="_blank">W3schools Unordered lists</a>
+    </div>
+        <img src="https://ctfassets.ksldigital.com/0wjmk6wgfops/5JD8w0POZhQ3qrd67umb3x/20641b214beec98ee856a8b51b278947/1d4f485432_d05d7611-2084-4c25-ac90-807915184a65.jpg?q=70" alt="Mount Timpanogos in the fall"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Mount_Timpanogos_-_01-07-08.jpg" alt="timp in the winter"/>
     </body>
 </html>
-            
