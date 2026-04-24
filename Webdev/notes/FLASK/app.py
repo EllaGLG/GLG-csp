@@ -1,9 +1,29 @@
-from flask import Flask
+from flask import Flask, redirect, url_for, render_template
 
 app = Flask(__name__)
+admin = True
 
 @app.route("/")
 def home():
-    return "this is the home page!"
+    return render_template("index.html", title="Home", content="This is the home page!")
+    
+
+@app.route("/test")
+def testing():
+   return render_template("index.html", title="Test", content="This is just checking if it works!")
+
+
+@app.route("/admin")
+def administrator():
+    if admin:
+        return "you are an admin"
+    else:
+        return redirect(url_for("home"))
+
+@app.route("/<name>")
+def person(name):
+    return f"<h1>Hello {name}!</h1>"
+
+
 
 app.run()
