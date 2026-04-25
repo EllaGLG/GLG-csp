@@ -10,7 +10,7 @@
 
     <style>
         body {
-            background-color: rgb(233, 190, 223); /* TU COLOR ORIGINAL */
+            background-color: rgb(233, 190, 223);
             font-family: "Montserrat", sans-serif;
             margin: 0;
             padding: 0;
@@ -31,7 +31,7 @@
             text-align: center;
             font-family: "Butterfly Kids", cursive;
             font-size: 60px;
-            color: rgb(150, 37, 144); /* TU COLOR ORIGINAL */
+            color: rgb(150, 37, 144);
             margin-top: 20px;
         }
 
@@ -39,13 +39,13 @@
         h2, h3 {
             font-family: "Butterfly Kids", cursive;
             font-size: 40px;
-            color: white; /* TU COLOR ORIGINAL */
+            color: white;
             margin-bottom: 10px;
         }
 
         /* PÁRRAFOS */
         p {
-            color: white; /* TU COLOR ORIGINAL */
+            color: white;
             padding: 10px;
             margin: 10px 0;
             line-height: 1.5;
@@ -53,13 +53,13 @@
 
         /* LISTAS */
         ul {
-            color: white; /* TU COLOR ORIGINAL */
+            color: white;
             padding-left: 20px;
         }
 
         /* IMÁGENES */
         img {
-            border: 4px inset rgb(230, 133, 178); /* TU COLOR ORIGINAL */
+            border: 4px inset rgb(230, 133, 178);
             width: 250px;
         }
 
@@ -70,7 +70,7 @@
             gap: 20px;
             align-items: start;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.15); /* TU ESTILO ORIGINAL */
+            background-color: rgba(255, 255, 255, 0.15);
             border-radius: 10px;
         }
 
@@ -82,8 +82,20 @@
 
         /* LINK FINAL */
         a {
-            color: purple; /* TU COLOR ORIGINAL */
+            color: purple;
             font-weight: bold;
+        }
+
+        /* BOTÓN */
+        #toggleBtn {
+            padding: 10px 15px;
+            background-color: purple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            cursor: pointer;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -107,9 +119,10 @@
             </p>
         </div>
 
-        <!-- IMAGEN PRINCIPAL -->
+        <!-- IMAGEN CON HOVER -->
         <div class="center-img">
-            <img src="https://imageio.forbes.com/specials-images/imageserve/69ceb1dc3b8973d4632b02c3/HE6ZwvgaIAAJ0sI/0x0.jpg?format=jpg&width=480"
+            <img id="hoverImg"
+                src="https://imageio.forbes.com/specials-images/imageserve/69ceb1dc3b8973d4632b02c3/HE6ZwvgaIAAJ0sI/0x0.jpg?format=jpg&width=480"
                 alt="Olivia's New Album">
         </div>
 
@@ -141,12 +154,49 @@
             </ul>
         </div>
 
+        <!-- BOTÓN SHOW/HIDE -->
+        <button id="toggleBtn">Show/Hide More Info</button>
+
+        <!-- CONTENIDO OCULTO -->
+        <div id="extraContent" style="display:none;">
+            <p>
+                Olivia continues to inspire young artists with her emotional songwriting and unique style.
+            </p>
+
+            <!-- IMAGEN FINAL CORRECTA -->
+            <img src="https://www.interviewmagazine.com/wp-content/uploads/2023/08/CM_1752-45-scaled.jpg"
+                 alt="Extra Olivia Image"
+                 style="width:250px; border:4px inset rgb(230,133,178);">
+        </div>
+
         <!-- LINK -->
         <a href="https://store.oliviarodrigo.com/" target="_blank">
             Olivia Rodrigo official website
         </a>
 
     </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        /* SHOW/HIDE BUTTON */
+        const btn = document.getElementById("toggleBtn");
+        const extra = document.getElementById("extraContent");
+
+        btn.onclick = function () {
+            extra.style.display = extra.style.display === "none" ? "block" : "none";
+        };
+
+        /* HOVER IMAGE CHANGE */
+        const hoverImg = document.getElementById("hoverImg");
+
+        hoverImg.onmouseover = function () {
+            hoverImg.src = "https://i.pinimg.com/736x/4c/2e/7f/4c2e7f3d3a3c7c9b1d8d8e3e2e7c9d2c.jpg";
+        };
+
+        hoverImg.onmouseout = function () {
+            hoverImg.src = "https://imageio.forbes.com/specials-images/imageserve/69ceb1dc3b8973d4632b02c3/HE6ZwvgaIAAJ0sI/0x0.jpg?format=jpg&width=480";
+        };
+    </script>
 
 </body>
 </html>
