@@ -4,199 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <title>Olivia Rodrigo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    img{
+         border: 4px inset rgb(230, 133, 178);
+        width: 250px;
+    }
+    body{
+        background-color: rgb(233, 190, 223);
+    }
+    h1{
+                text-align: center;
+                font-family: "Butterfly Kids", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 60px;
+    }
+    p{
+                color: white;
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                font-style: normal;
+                margin: 
+                padding: 
+            }
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    ul{
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        
+    }
 
-    <style>
-        body {
-            background-color: rgb(233, 190, 223);
-            font-family: "Montserrat", sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    h3{
+        color: white;
+        font-family: "Butterfly Kids", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
 
-        /* CONTENEDOR TIPO REVISTA */
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-        }
+    }
 
-        /* TÍTULO PRINCIPAL */
-        h1 {
-            text-align: center;
-            font-family: "Butterfly Kids", cursive;
-            font-size: 60px;
-            color: rgb(150, 37, 144);
-            margin-top: 20px;
-        }
+    h2{
+    color: white;
+    font-family: "Butterfly Kids", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
 
-        /* SUBTÍTULOS */
-        h2, h3 {
-            font-family: "Butterfly Kids", cursive;
-            font-size: 40px;
-            color: white;
-            margin-bottom: 10px;
-        }
+    }
+    h1{
+    color: rgb(150, 37, 144);
 
-        /* PÁRRAFOS */
-        p {
-            color: white;
-            padding: 10px;
-            margin: 10px 0;
-            line-height: 1.5;
-        }
+    }
 
-        /* LISTAS */
-        ul {
-            color: white;
-            padding-left: 20px;
-        }
-
-        /* IMÁGENES */
-        img {
-            border: 4px inset rgb(230, 133, 178);
-            width: 250px;
-        }
-
-        /* SECCIÓN GRID TIPO REVISTA */
-        .grid-section {
-            display: grid;
-            grid-template-columns: 250px 1fr;
-            gap: 20px;
-            align-items: start;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.15);
-            border-radius: 10px;
-        }
-
-        /* IMAGEN CENTRADA */
-        .center-img {
-            display: flex;
-            justify-content: center;
-        }
-
-        /* LINK FINAL */
-        a {
-            color: purple;
-            font-weight: bold;
-        }
-
-        /* BOTÓN */
-        #toggleBtn {
-            padding: 10px 15px;
-            background-color: purple;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            width: 200px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-    </style>
+    div {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+</style>
 </head>
-
 <body>
-
-    <div class="container">
-
-        <h1>Olivia Rodrigo</h1>
-
-        <!-- INTRO -->
-        <div>
-            <h2>The Breakthrough</h2>
-            <p>
-                How Olivia Rodrigo, one of the most popular singers, rose to fame and stayed
-                at the top of the Billboard charts with only two albums and around 30 songs
-                over the last five years. Now she is about to launch her new album,
-                “You Seem Pretty Sad for a Girl So in Love” and everyone is going crazy.
-                Let's look at the breakthrough of this star — from being a child actor to
-                becoming one of the top 50 artists in the world.
-            </p>
-        </div>
-
-        <!-- IMAGEN CON HOVER -->
-        <div class="center-img">
-            <img id="hoverImg"
-                src="https://imageio.forbes.com/specials-images/imageserve/69ceb1dc3b8973d4632b02c3/HE6ZwvgaIAAJ0sI/0x0.jpg?format=jpg&width=480"
-                alt="Olivia's New Album">
-        </div>
-
-        <!-- SECCIÓN GRID -->
-        <div class="grid-section">
-            <img src="https://i.pinimg.com/originals/5f/37/35/5f373530ffafbbe48757b2ead82026b3.jpg"
-                alt="Olivia as a child">
-
-            <div>
-                <h3>Being a Child Artist</h3>
-                <p>
-                    Olivia Isabel Rodrigo was born in Temecula, California, on February 20, 2003.
-                    She grew up listening to alternative rock bands like No Doubt, Pearl Jam, and Green Day.
-                    At age 5 she began music training, piano lessons, and musical theater. She also competed
-                    in local singing contests and later began acting lessons guided by her vocal coach.
-                </p>
-            </div>
-        </div>
-
-        <!-- LISTA -->
-        <div>
-            <p>Some of her first roles were:</p>
-            <ul>
-                <li>Old Navy commercial (2014–2015)</li>
-                <li>An American Girl: Grace Stirs Up Success (2015) — Grace Thomas</li>
-                <li>Bizaardvark (2016–2019) — Paige Olvera</li>
-                <li>New Girl (2017) — Terrinea</li>
-                <li>High School Musical: The Musical: The Series (2019–2022) — Nini Salazar-Roberts</li>
-            </ul>
-        </div>
-
-        <!-- BOTÓN SHOW/HIDE -->
-        <button id="toggleBtn">Show/Hide More Info</button>
-
-        <!-- CONTENIDO OCULTO -->
-        <div id="extraContent" style="display:none;">
-            <p>
-                Olivia continues to inspire young artists with her emotional songwriting and unique style.
-            </p>
-
-            <!-- IMAGEN FINAL CORRECTA -->
-            <img src="https://www.interviewmagazine.com/wp-content/uploads/2023/08/CM_1752-45-scaled.jpg"
-                 alt="Extra Olivia Image"
-                 style="width:250px; border:4px inset rgb(230,133,178);">
-        </div>
-
-        <!-- LINK -->
-        <a href="https://store.oliviarodrigo.com/" target="_blank">
-            Olivia Rodrigo official website
-        </a>
-
+    <div>
+    <h1>Olivia Rodrigo</h1>
+    <div>
+    <h2>The Breakthrough</h2>
+    <p>
+        How Olivia Rodrigo, one of the most popular singers, rose to fame and stayed
+        at the top of the Billboard charts with only two albums and around 30 songs
+        over the last five years. Now she is about to launch her new album,
+        “You Seem Pretty Sad for a Girl So in Love” and everyone is going crazy.
+        Let['s look at the breakthrough of this star — from being a child actor to
+        becoming one of the top 50 artists in the world.
+    </p>
+    </div>
+    <br>
+    <div>
+    <img src="https://imageio.forbes.com/specials-images/imageserve/69ceb1dc3b8973d4632b02c3/HE6ZwvgaIAAJ0sI/0x0.jpg?format=jpg&width=480" 
+        alt="Olivia's New album You Seem Pretty Sad for a Girl So in Love">  
+    <h3>Being a Child Artist</h3>
+    <p>
+        Olivia Isabel Rodrigo was born in Temecula, California, U.S., on February 20, 2003.
+        Her mother, Jenny Rodrigo, and her father, Chris Rodrigo, raised her in a loving home.
+        Liv describes her childhood as wonderful. Since she was little, she had a passion for music,
+        growing up listening to alternative rock bands like No Doubt, Pearl Jam, and Green Day.
+        At an early age, she showed natural musical talent and took lessons to improve.
+        Liv began to do music traning lessons at age 5, stared to play piano, participated in muscial theater, 
+        at Lisa J. Mails Elementary School in Murrieta. Liv also competed in local singing contests from a young age,
+        Including the boys and girls Club idol, and stared attending acting lessons, giude by the advice of her 
+        vocal Coach.
+    </p>
+    </div>
+    <br>
+    <div>
+   <p> Olivia Rodrigo started her first role's as an actriss </p>
+   <div id="unordered" style="font-family: papyrus;">
+    <p>Some her first roles where:</p>
+    <ul>
+        <li> Appeared in an Old Navy commercial in 2014/2015 at age 12.</li>
+        <li>An American Girl: Grace Stirs Up Success (2015) at age 12 : she played Grace Thomas </li>
+        <li>Bizaardvark (2016–2019): She played the lead role of Paige Olvera</li>
+        <li>New Girl (2017): She had a guest appearance as Terrinea in the episode "Young Adult"</li>
+        <il>High School Musical: The Musical: The Series (2019–2022): She starred as Nini Salazar-Roberts </il>
+    </ul>
     </div>
 
-    <!-- JAVASCRIPT -->
-    <script>
-        /* SHOW/HIDE BUTTON */
-        const btn = document.getElementById("toggleBtn");
-        const extra = document.getElementById("extraContent");
+        <div></div>
 
-        btn.onclick = function () {
-            extra.style.display = extra.style.display === "none" ? "block" : "none";
-        };
-
-        /* HOVER IMAGE CHANGE */
-        const hoverImg = document.getElementById("hoverImg");
-
-        hoverImg.onmouseover = function () {
-            hoverImg.src = "https://i.pinimg.com/736x/4c/2e/7f/4c2e7f3d3a3c7c9b1d8d8e3e2e7c9d2c.jpg";
-        };
-
-        hoverImg.onmouseout = function () {
-            hoverImg.src = "https://imageio.forbes.com/specials-images/imageserve/69ceb1dc3b8973d4632b02c3/HE6ZwvgaIAAJ0sI/0x0.jpg?format=jpg&width=480";
-        };
-    </script>
-
+        <img src="https://i.pinimg.com/originals/5f/37/35/5f373530ffafbbe48757b2ead82026b3.jpg" 
+        alt="Olivia's photo when she was little">  
+        <br>
+        <br>
+        <a href="https://store.oliviarodrigo.com/?srsltid=AfmBOooMuTZG54bd3g2NgYJ1834ukwJj_3L_bYky71sZ9_c7O65ilkhy" 
+        target="_blank"> Olivia Rodrigo official website</a> <!--The href allows links. the target makes it go to new tab-->
+    </div>    
+    </div>
+    
 </body>
+
 </html>
