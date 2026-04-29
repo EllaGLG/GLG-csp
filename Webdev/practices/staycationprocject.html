@@ -5,19 +5,31 @@
     <!-- Info for the browser that the user doesn't see -->
     <meta charset="UTF-8">
     <title>Utah bear Lake</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color:  rgb(190, 207, 233);
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-<style>
-    img{
-        border: 4px inset rgb(115, 177, 248);
-        width: 250px;
-    }
-    body{
-        background-color: rgb(190, 207, 233);
-    }
-    h1{
+        /* CONTENEDOR TIPO REVISTA */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        /* TÍTULO PRINCIPAL */
+        h1{
                 color: aliceblue;
                 text-align: center;
                 font-family: "Carter One", system-ui;
@@ -25,76 +37,146 @@
                 font-style: normal;
 
     }
-    h2{
-        color: white;
+        h2{
+            color: white;
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: <weight>;
         font-style: normal;
-    }
-
-    p{
-                color: white;
+        }
+        p {
+            color: white;
                 text-align: lef;
                 font-family: "Montserrat", sans-serif;
                 font-optical-sizing: auto;
                 font-weight: <weight>;
                 font-style: normal;
-            }
+        }
 
-    ul{
-        color: white;
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style:normal;
-        
-    }
-                div {
-            margin-top: 10px;
-            margin-right: 20px;
-            margin-bottom: 15px;
-            margin-left: 5px;
-            }
-</style>
+       
+        ul {
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style:normal;
+            padding-left: 20px;
+        }
+        img {
+            border: 4px inset rgb(115, 177, 248);
+        width: 250px;
+        }
+
+        /* SECCIÓN GRID TIPO REVISTA */
+        .grid-section {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 20px;
+            align-items: start;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+        }
+
+        /* IMAGEN CENTRADA */
+        .center-img {
+            display: flex;
+            justify-content: center;
+        }
+        /* BOTÓN */
+        #toggleBtn {
+            padding: 10px 15px;
+            background-color: rgb(0, 67, 184);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-    <h1>Bear Lake-Utah</h1>
-    <div>
-    <h2>The Bear Lake</h2>
-    <p>
-        Bear Lake, nicknamed the "Caribbean of the Rockies" for its intense turquoise blue water, 
-        is one of the best locations to visit in Utah because of its stunning, shallow sandy beaches, 
-        vibrant summer boating, and unique year-round recreation. Located on the Utah-Idaho border, 
-        it offers swimming, fresh raspberry shakes, hiking, and fishing, making it ideal 
-        for families and outdoor enthusiasts.
 
-    </p>
-    </div>
-    <br>
-    <div>
-    <img src=https://www.destinationbigbear.com/blog/wp-content/uploads/2015/03/lake-view-from-damn.jpg
-        alt="Bear lake Utah photo">  
-    </div>
-   <div id="unordered" style="font-family: papyrus;">
-    <p>reasons people visit Bear Lake:</p>
-    <ul>
-        <li>Stunning Turquoise Water: The lake's unique turquoise color gives it  a tropical appearance.</li>
-        <li>Family-Friendly Beaches: Beaches like North Beach and Rendezvous Beach feature shallow, warm, and sandy shores, making them perfect for children.</li>
-        <li>Water Recreation: The lake is popular for boating, sailing, jet skiing, water skiing, and paddleboarding.</li>
-        <li>Unique Local Culture & Food: The area is famous for its fresh raspberry shakes, especially during the annual Raspberry Days festival in Garden City.</li>
-        <li>Year-Round Activities: While summer is the peak season for water sports, winter offers activities like snowmobiling and ice fishing, including the unique Cisco Run in January.</li>
-    </ul>
-    <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/BBV_Summer_2019_-33.jpg/1280px-BBV_Summer_2019_-33.jpg
-    alt="Bear lake Utah photo">  
-    <img src=https://www.rockymountainnationalpark.com/images/xl/20180910-19-08-17-lg.jpg
-    alt="Bear lake Utah photo"> 
-    </div>
-     
-    </div>    
-    </div>
-    
+    <div class="container">
+
+        <h1>Olivia Rodrigo</h1>
+
+        <!-- INTRO -->
+        <div>
+            <h2>The Breakthrough</h2>
+            <p>
+                How Olivia Rodrigo, one of the most popular singers, rose to fame and stayed
+                at the top of the Billboard charts with only two albums and around 30 songs
+                over the last five years. Now she is about to launch her new album,
+                “You Seem Pretty Sad for a Girl So in Love” and everyone is going crazy.
+                Let's look at the breakthrough of this star — from being a child actor to
+                becoming one of the top 50 artists in the world.
+            </p>
+        </div>
+
+        <!-- IMAGEN CON HOVER -->
+        <div class="center-img">
+            <img id="hoverImg"
+                src="https://imageio.forbes.com/specials-images/imageserve/69ceb1dc3b8973d4632b02c3/HE6ZwvgaIAAJ0sI/0x0.jpg?format=jpg&width=480"
+                alt="Olivia's New Album">
+        </div>
+
+        <!-- SECCIÓN GRID -->
+        <div class="grid-section">
+            <img src=https://www.destinationbigbear.com/blog/wp-content/uploads/2015/03/lake-view-from-damn.jpg
+            alt="Bear lake Utah photo">  
+        </div>
+
+        <!-- LISTA -->
+        <div>
+            <p>Some of her first roles were:</p>
+            <ul>
+                <li>Stunning Turquoise Water: The lake's unique turquoise color gives it  a tropical appearance.</li>
+                <li>Family-Friendly Beaches: Beaches like North Beach and Rendezvous Beach feature shallow, warm, and sandy shores, making them perfect for children.</li>
+                <li>Water Recreation: The lake is popular for boating, sailing, jet skiing, water skiing, and paddleboarding.</li>
+                <li>Unique Local Culture & Food: The area is famous for its fresh raspberry shakes, especially during the annual Raspberry Days festival in Garden City.</li>
+                <li>Year-Round Activities: While summer is the peak season for water sports, winter offers activities like snowmobiling and ice fishing, including the unique Cisco Run in January.</li>
+        
+            </ul>
+        </div>
+
+        <!-- BOTÓN SHOW/HIDE -->
+        <button id="toggleBtn">Show/Hide More Info</button>
+
+        <!-- CONTENIDO OCULTO -->
+        <div id="extraContent" style="display:none;">
+            <p>
+                Olivia continues to inspire young artists with her emotional songwriting and unique style.
+            </p>
+
+            <!-- IMAGEN FINAL CORRECTA -->
+            <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/BBV_Summer_2019_-33.jpg/1280px-BBV_Summer_2019_-33.jpg
+            alt="Bear lake Utah photo">  
+                
+
+    <!-- JAVASCRIPT -->
+    <script>
+        /* SHOW/HIDE BUTTON */
+        const btn = document.getElementById("toggleBtn");
+        const extra = document.getElementById("extraContent");
+
+        btn.onclick = function () {
+            extra.style.display = extra.style.display === "none" ? "block" : "none";
+        };
+
+        /* HOVER IMAGE CHANGE */
+        const hoverImg = document.getElementById("hoverImg");
+
+        hoverImg.onmouseover = function () {
+            hoverImg.src = "https://i.pinimg.com/736x/4c/2e/7f/4c2e7f3d3a3c7c9b1d8d8e3e2e7c9d2c.jpg";
+        };
+
+        hoverImg.onmouseout = function () {
+            hoverImg.src = "https://imageio.forbes.com/specials-images/imageserve/69ceb1dc3b8973d4632b02c3/HE6ZwvgaIAAJ0sI/0x0.jpg?format=jpg&width=480";
+        };
+    </script>
+
 </body>
-
 </html>
