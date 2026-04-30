@@ -2,66 +2,96 @@
 <html lang="en">
 
 <head>
-    <!-- Info for the browser that the user doesn't see -->
     <meta charset="UTF-8">
-    <title>Utah bear Lake</title>
+    <title>Utah Bear Lake</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
+    body{
+        background-color: rgb(190, 207, 233);
+        margin: 0;
+        padding: 20px;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+    }
+
+    h1{
+        text-align: center;
+        font-family: "Carter One", system-ui;
+        color: aliceblue;
+    }
+
+    h2{
+        font-weight: 700;
+    }
+
+    p, ul{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
     img{
         border: 4px inset rgb(115, 177, 248);
         width: 250px;
+        transition: 0.3s;
     }
-    body{
-        background-color: rgb(190, 207, 233);
-    }
-    h1{
-                color: aliceblue;
-                text-align: center;
-                font-family: "Carter One", system-ui;
-                font-weight: 400;
-                font-style: normal;
 
+    /* Hover image swap */
+    .hover-swap {
+        width: 300px;
+        border: 4px inset rgb(115, 177, 248);
+        transition: 0.3s;
     }
-    h2{
+
+    .hover-swap:hover {
+        content: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/09/f7/df/view-from-the-beach.jpg?w=900&h=500&s=1");
+        transform: scale(1.05);
+        border-color: white;
+    }
+
+    /* Flexbox layout for images */
+    .image-row{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    /* Hidden content box */
+    #extraContent{
+        display: none;
+        margin-top: 20px;
+        padding: 15px;
+        background-color: rgba(255,255,255,0.15);
+        border-radius: 10px;
+    }
+
+    button{
+        background-color: rgb(115, 177, 248);
         color: white;
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 20px;
     }
 
-    p{
-                color: white;
-                text-align: lef;
-                font-family: "Montserrat", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: <weight>;
-                font-style: normal;
-            }
-
-    ul{
-        color: white;
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style:normal;
-        
+    button:hover{
+        background-color: rgb(90, 150, 220);
     }
-                div {
-            margin-top: 10px;
-            margin-right: 20px;
-            margin-bottom: 15px;
-            margin-left: 5px;
-            }
 </style>
 </head>
+
 <body>
-    <div>
-    <h1>Bear Lake-Utah</h1>
-    <div>
+
+    <h1>Bear Lake – Utah</h1>
+
     <h2>The Bear Lake</h2>
     <p>
         Bear Lake, nicknamed the "Caribbean of the Rockies" for its intense turquoise blue water, 
@@ -69,32 +99,57 @@
         vibrant summer boating, and unique year-round recreation. Located on the Utah-Idaho border, 
         it offers swimming, fresh raspberry shakes, hiking, and fishing, making it ideal 
         for families and outdoor enthusiasts.
-
     </p>
-    </div>
-    <br>
-    <div>
-    <img src=https://www.destinationbigbear.com/blog/wp-content/uploads/2015/03/lake-view-from-damn.jpg
-        alt="Bear lake Utah photo">  
-    </div>
-   <div id="unordered" style="font-family: papyrus;">
-    <p>reasons people visit Bear Lake:</p>
-    <ul>
-        <li>Stunning Turquoise Water: The lake's unique turquoise color gives it  a tropical appearance.</li>
-        <li>Family-Friendly Beaches: Beaches like North Beach and Rendezvous Beach feature shallow, warm, and sandy shores, making them perfect for children.</li>
-        <li>Water Recreation: The lake is popular for boating, sailing, jet skiing, water skiing, and paddleboarding.</li>
-        <li>Unique Local Culture & Food: The area is famous for its fresh raspberry shakes, especially during the annual Raspberry Days festival in Garden City.</li>
-        <li>Year-Round Activities: While summer is the peak season for water sports, winter offers activities like snowmobiling and ice fishing, including the unique Cisco Run in January.</li>
-    </ul>
-    <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/BBV_Summer_2019_-33.jpg/1280px-BBV_Summer_2019_-33.jpg
-    alt="Bear lake Utah photo">  
-    <img src=https://www.rockymountainnationalpark.com/images/xl/20180910-19-08-17-lg.jpg
-    alt="Bear lake Utah photo"> 
-    </div>
-     
-    </div>    
-    </div>
-    
-</body>
 
+    <h2>Reasons People Visit Bear Lake:</h2>
+    <ul>
+        <li>Stunning Turquoise Water that looks tropical.</li>
+        <li>Family-Friendly Beaches with warm, shallow water.</li>
+        <li>Boating, jet skiing, paddleboarding, and more.</li>
+        <li>Famous Raspberry Shakes and local festivals.</li>
+        <li>Year-round activities including snowmobiling and ice fishing.</li>
+    </ul>
+
+    <!-- Image Row -->
+    <div class="image-row">
+        <img class="hover-swap" 
+             src="https://bearlakeutahvacationrental.com/wp-content/uploads/2020/01/22829903_1643024812386864_6612823181224655767_o.jpg"
+             alt="Bear Lake hover image">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/BBV_Summer_2019_-33.jpg/1280px-BBV_Summer_2019_-33.jpg" alt="Bear Lake Utah">
+
+        <img src="https://www.rockymountainnationalpark.com/images/xl/20180910-19-08-17-lg.jpg" alt="Bear Lake Utah">
+    </div>
+
+    <!-- Show/Hide Button -->
+    <button onclick="toggleContent()">Show More</button>
+
+    <!-- Hidden Content -->
+    <div id="extraContent">
+        <p>
+            Bear Lake has a beautiful visitor center where guests can learn about the lake’s history,
+            wildlife, and the unique turquoise color of the water. It’s a great spot to start your trip,
+            get maps, and enjoy amazing views of the shoreline.
+        </p>
+
+        <img src="https://culturetrekking.com/images/img_FjiLG3H1W57MBXWcXK4zhW/bear-lake-visitors-center.jpg?fit=outside&w=1600"
+             alt="Bear Lake Visitor Center">
+    </div>
+
+<script>
+    function toggleContent(){
+        const box = document.getElementById("extraContent");
+        const btn = document.querySelector("button");
+
+        if(box.style.display === "none"){
+            box.style.display = "block";
+            btn.textContent = "Hide Content";
+        } else {
+            box.style.display = "none";
+            btn.textContent = "Show More";
+        }
+    }
+</script>
+
+</body>
 </html>
