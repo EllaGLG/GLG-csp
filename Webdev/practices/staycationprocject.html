@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Utah Bear Lake</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
@@ -15,6 +16,10 @@
         padding: 20px;
         font-family: "Montserrat", sans-serif;
         color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        gap: 20px;
     }
 
     h1{
@@ -38,6 +43,7 @@
         height: 250px;
         transition: 0.3s;
     }
+
     .hover-swap {
         width: 300px;
         border: 4px inset rgb(115, 177, 248);
@@ -49,19 +55,25 @@
         transform: scale(1.05);
         border-color: white;
     }
+
     .image-row{
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 10px;
     }
+
     #extraContent{
         display: none;
         margin-top: 20px;
         padding: 15px;
         background-color: rgba(255,255,255,0.15);
         border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 15px;
     }
 
     button{
@@ -72,7 +84,8 @@
         font-size: 18px;
         border-radius: 8px;
         cursor: pointer;
-        margin-top: 20px;
+        margin: 0 auto;
+        display: block;
     }
 
     button:hover{
@@ -85,24 +98,29 @@
 
     <h1>Bear Lake – Utah</h1>
 
-    <h2>The Bear Lake</h2>
-    <p>
-        Bear Lake, nicknamed the "Caribbean of the Rockies" for its intense turquoise blue water, 
-        is one of the best locations to visit in Utah because of its stunning, shallow sandy beaches, 
-        vibrant summer boating, and unique year-round recreation. Located on the Utah-Idaho border, 
-        it offers swimming, fresh raspberry shakes, hiking, and fishing, making it ideal 
-        for families and outdoor enthusiasts.
-    </p>
+    <section>
+        <h2>The Bear Lake</h2>
+        <p>
+            Bear Lake, nicknamed the "Caribbean of the Rockies" for its intense turquoise blue water, 
+            is one of the best locations to visit in Utah because of its stunning, shallow sandy beaches, 
+            vibrant summer boating, and unique year-round recreation. Located on the Utah-Idaho border, 
+            it offers swimming, fresh raspberry shakes, hiking, and fishing, making it ideal 
+            for families and outdoor enthusiasts.
+        </p>
+    </section>
 
-    <h2>Reasons People Visit Bear Lake:</h2>
-    <ul>
-        <li>Stunning Turquoise Water that looks tropical.</li>
-        <li>Family-Friendly Beaches with warm, shallow water.</li>
-        <li>Boating, jet skiing, paddleboarding, and more.</li>
-        <li>Famous Raspberry Shakes and local festivals.</li>
-        <li>Year-round activities including snowmobiling and ice fishing.</li>
-    </ul>
-    <div class="image-row">
+    <section>
+        <h2>Reasons People Visit Bear Lake:</h2>
+        <ul>
+            <li>Stunning Turquoise Water that looks tropical.</li>
+            <li>Family-Friendly Beaches with warm, shallow water.</li>
+            <li>Boating, jet skiing, paddleboarding, and more.</li>
+            <li>Famous Raspberry Shakes and local festivals.</li>
+            <li>Year-round activities including snowmobiling and ice fishing.</li>
+        </ul>
+    </section>
+
+    <section class="image-row">
         <img class="hover-swap" 
              src="https://bearlakeutahvacationrental.com/wp-content/uploads/2020/01/22829903_1643024812386864_6612823181224655767_o.jpg"
              alt="Bear Lake hover image">
@@ -110,8 +128,10 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/BBV_Summer_2019_-33.jpg/1280px-BBV_Summer_2019_-33.jpg" alt="Bear Lake Utah">
 
         <img src="https://www.rockymountainnationalpark.com/images/xl/20180910-19-08-17-lg.jpg" alt="Bear Lake Utah">
-    </div>
+    </section>
+
     <button onclick="toggleContent()">Show More</button>
+
     <div id="extraContent">
         <p>
             Bear Lake has a beautiful visitor center where guests can learn about the lake’s history,
@@ -140,6 +160,3 @@
 
 </body>
 </html>
-
-
- <!-- finish! -->
